@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner News</title>
+    <link rel="icon" href="c5.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="" class="company-logo">
+                <img src="c5.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="student" onClick="onNavItemClick('student')">student</li>
+                    <li class="hover-link nav-item" id="india" onClick="onNavItemClick('india')">India</li>
+                    <li class="hover-link nav-item" id="agricultural" onClick="onNavItemClick('agricultural')">farmer
+                    </li>
+                    <li class="hover-link nav-item" id="politics" onClick="onNavItemClick('politics')">Politician</li>
+                    <li class="hover-link nav-item" id="businessman" onClick="onNavItemClick('businessman')">Businessman</li>
+
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cardscontainer">
+
+
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">constGenius 02/02/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                    incidunt ratione, dolore beatae quaerat voluptatum autem fugit voluptas minima eligendi facere
+                    tenetur cumque. Dolorem porro, fugiat distinctio a accusamus cum!</p>
+            </div>
+        </div>
+    </template>
+
+    <div class="sidebar">
+        <ul class="side">
+                <li class="hover-link nav-item one head" id="student" onClick="onNavItemClick('student')"><i class="fa-solid fa-graduation-cap"></i> &nbsp;Student corner</li>
+                <li class="hover-link nav-item one" id="Exam" onClick="onNavItemClick('Exam')"><i class="fa-solid fa-file-lines"></i> &nbsp;Exams</li>
+                <li class="hover-link nav-item one" id="scholarship" onClick="onNavItemClick('scholarship')"><i class="fa-solid fa-hand-holding-dollar"></i> &nbsp;Scolarships</li>
+                <li class="hover-link nav-item one" id="internship" onClick="onNavItemClick('internship')"><i class="fa-solid fa-paper-plane"></i> &nbsp;Internships</li>
+                <li class="hover-link nav-item one" id="recruit" onClick="onNavItemClick('recruit')"><i class="fa-solid fa-building-columns"></i> &nbsp;Campus</li>
+        </ul>
+        <div class="social_media">
+            <ul>
+              <a href="#"><i class="fa-brands fa-facebook hover-link"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter hover-link"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram hover-link"></i></i></a>
+              <a href="#"><i class="fa-brands fa-github hover-link"></i></a>
+            </ul>
+          </div>
+    </div>
+
+</body>
+
+</html>
